@@ -7,4 +7,8 @@ Rails.application.routes.draw do
   get '/kitten/:size' => 'pages#kitten'
   get '/kittens/:size' => 'pages#kittens'
   get '/contest' => 'pages#contest'
+
+  get '/secrets/:magic_word' => 'pages#secrets'
+  get '/bad_password' => 'pages#bad_password'
+
 end
